@@ -8,10 +8,11 @@ function checkFuel()
     turtle.refuel(1)
     print("Turtle Reabastecido.")
   end
+end
 
 function chopTree()
   local success, itemId = turtle.inspect()
-  if itemId.name = "minecraft:log" then
+  if itemId.name == "minecraft:spruce_log" then
     turtle.dig()
     turtle.forward()
 
